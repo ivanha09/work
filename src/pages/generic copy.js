@@ -14,7 +14,7 @@ const SecondPage = () => (
     <div id="wrapper">
       <section id="main" className="wrapper">
         <div className="inner">
-          <h1 className="major">Goodcheck</h1>
+          <h1 className="major">A Generic Page</h1>
           <span className="image fit">
             <img src={pic4} alt="" />
           </span>

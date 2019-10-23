@@ -10,23 +10,31 @@
 		> section {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
-			min-height: 22.5em;
+			min-height: 28em;
 
 			body.is-ie & {
 				min-height: 0;
 			}
 
 			> .image {
+				@include padding(4em, 15em);
 				background-position: center center;
 				background-size: cover;
 				border-radius: 0;
 				display: block;
 				position: relative;
 				width: 25em;
+				// border: solid 4px blue;
+				
 
 				img {
+					@include centre;
 					border-radius: 0;
 					display: block;
+					// width: 16rem;
+					max-height: 16rem;
+					// border: solid 4px green;
+
 				}
 
 				&:before {
@@ -50,6 +58,7 @@
 				@include vendor('justify-content', 'center');
 				width: #{_size(inner-width) - 25em};
 				-ms-flex: 1;
+				// border: solid 4px red;
 
 				> .inner {
 					@include vendor('transform', 'translateX(0) translateY(0)');
@@ -61,6 +70,43 @@
 				}
 			}
 
+			// > .hero-img {
+			// 	@include padding(4em, 5em);
+			// 	@include vendor('display', 'flex');
+			// 	@include vendor('flex-direction', 'column');
+			// 	@include vendor('justify-content', 'left');
+			// 	-ms-flex: 1;
+			// 	border: solid 5px yellow;
+
+			// 	> .inner {
+			// 		@include vendor('transform', 'translateX(0) translateY(0)');
+			// 		@include vendor('transition', (
+			// 			'opacity #{_duration(activation)} ease',
+			// 			'transform #{_duration(activation)} ease'
+			// 		));
+			// 		opacity: 1;
+			// 	}
+			// }
+
+			// > .hero-content {
+			// 	@include padding(4em, 5em);
+			// 	@include vendor('display', 'flex');
+			// 	@include vendor('flex-direction', 'column');
+			// 	@include vendor('justify-content', 'center');
+			// 	-ms-flex: 1;
+			// 	border: solid 5px yellow;
+
+
+			// 	> .inner {
+			// 		@include vendor('transform', 'translateX(0) translateY(0)');
+			// 		@include vendor('transition', (
+			// 			'opacity #{_duration(activation)} ease',
+			// 			'transform #{_duration(activation)} ease'
+			// 		));
+			// 		opacity: 1;
+			// 	}
+			// }
+
 			&:nth-child(1) {
 			}
 
@@ -71,6 +117,18 @@
 			&:nth-child(3) {
 				background-color: rgba(0,0,0,0.1);
 			}
+
+			&:nth-child(4) {
+			}
+
+			&:nth-child(5) {
+				background-color: rgba(0,0,0,0.05);
+			}
+
+			&:nth-child(6) {
+				background-color: rgba(0,0,0,0.1);
+			}
+			
 
 			&.inactive,
 			body.is-preload & {
@@ -95,15 +153,20 @@
 			}
 
 			@include breakpoint('<=medium') {
+				@include padding(3em, 0);
 				display: block;
 
 				> .image {
 					width: 100%;
-					height: 50vh;
+					height: 35vh;
+					// border: solid 5px white;
 				}
 
 				> .content {
 					width: 100%;
+					@include padding(1em, 8em);
+					// border: solid 5px yellow;
+
 				}
 
 				&.inactive,
@@ -118,13 +181,89 @@
 
 			@include breakpoint('<=small') {
 				> .image {
-					height: 50vh;
-					min-height: 15em;
+					height: 40vh;
+					// border: solid 5px white;
 				}
 
 				> .content {
 					@include padding(3em, 2em);
 				}
+			}
+		}
+	}
+
+	/* hero */
+
+	.hero {
+
+		> section {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'row');
+			min-height: 22.5em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// border: solid 5px blue;
+
+
+			body.is-ie & {
+				min-height: 0;
+			}
+
+			> .hero-img {
+				@include padding(1em, 1em);
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				@include vendor('justify-content', 'center');
+				-ms-flex: 1;
+				// border: solid 1px red;
+
+				> .inner {
+					@include vendor('transform', 'translateX(0) translateY(0)');
+					@include vendor('transition', (
+						'opacity #{_duration(activation)} ease',
+						'transform #{_duration(activation)} ease'
+					));
+					opacity: 1;
+				}
+			}
+
+			> .hero-content {
+				@include padding(1em, 1em);
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				@include vendor('justify-content', 'center');
+				-ms-flex: 1;
+
+
+				> .inner {
+					@include vendor('transform', 'translateX(0) translateY(0)');
+					@include vendor('transition', (
+						'opacity #{_duration(activation)} ease',
+						'transform #{_duration(activation)} ease'
+					));
+					opacity: 1;
+				}
+			}
+
+			&.inactive,
+			body.is-preload & {
+				> .image {
+					&:before {
+						opacity: 1;
+					}
+				}
+
+				> .content {
+					> .inner {
+						@include vendor('transform', 'translateX(-1em)');
+						opacity: 0;
+					}
+				}
+			}
+
+			@include breakpoint('<=small') {
+				// border: solid 6px brown;
 			}
 		}
 	}
