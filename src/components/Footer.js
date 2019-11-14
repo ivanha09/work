@@ -5,7 +5,7 @@ const Footer = () => (
   <footer id="footer" className="wrapper style1-alt">
     <div className="inner">
       <ul className="menu">
-        <li>&copy; IVAN. All rights reserved.</li>
+        <li>Ivan Ha &copy; 2019</li>
       </ul>
     </div>
   </footer>

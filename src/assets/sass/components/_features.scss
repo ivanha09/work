@@ -4,20 +4,20 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Features */
+/* Skills Section */
 
 	.features {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		border-radius: _size(border-radius);
-		border: solid 1px _palette(border);
+		//border: solid 1px _palette(border);
 		background: _palette(border-bg);
 		margin: 0 0 _size(element-margin) 0;
 
 		section {
 			@include padding(3em, 3em);
 			width: 33.33%;
-			border: solid 1px _palette(border);
+			//border: solid 1px _palette(border);
 			position: relative;
 
 			.icon {
@@ -53,7 +53,7 @@
 
 			section {
 				@include padding(3em, 3em, (0.5em, 0, 0, 4em));
-				border-top-width: 1px !important;
+				// border-top-width: 1px !important;
 				border-left-width: 0 !important;
 				width: 100%;
 
@@ -93,6 +93,68 @@
 				@include padding(2em, 1.5em, (0, 0, 0, 0));
 
 				.icon {
+					left: 0;
+					position: relative;
+					top: 0;
+				}
+			}
+		}
+	}
+
+	/* Skills Section */
+
+	.personas {
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		border-radius: _size(border-radius);
+		//border: solid 1px _palette(border);
+		background: _palette(border-bg);
+		margin: 0 0 _size(element-margin) 0;
+
+		section {
+			@include padding(3em, 3em);
+			width: 33.33%;
+			//border: solid 1px _palette(border);
+			position: relative;
+
+			
+
+			@for $i from 1 through _misc(max-features) {
+				&:nth-child(#{$i}) {
+					.icon {
+						@include vendor('transition-delay', '#{(_duration(transition) * 0.75 * $i)}');
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			display: block;
+
+			section {
+				@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+				// border-top-width: 1px !important;
+				border-left-width: 0 !important;
+				width: 100%;
+
+				&:first-child {
+					border-top-width: 0 !important;
+				}
+				
+			}
+		}
+
+		@include breakpoint('<=small') {
+			section {
+				@include padding(2em, 1.5em, (0.5em, 0, 0, 4em));
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			section {
+				@include padding(2em, 1.5em, (0, 0, 0, 0));
+
+				.img {
 					left: 0;
 					position: relative;
 					top: 0;
@@ -190,23 +252,21 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		border-radius: _size(border-radius);
-		border: solid 1px _palette(border);
-		background: _palette(border-bg);
+		// border: solid 1px _palette(border);
 		margin: 0 0 6rem 0;
 
 		section {
 			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
 			width: 100%;
-			border: solid 1px _palette(border);
 			position: relative;
-
+			background: _palette(border-bg);
 
 			&:nth-child(-n + 2) {
 				border-top-width: 0;
 			}
 
 			&:nth-child(2n) {
-				border-left: solid 1px _palette(border);
+				//border-left: solid 1px _palette(border);
 			}
 
 			.icon {

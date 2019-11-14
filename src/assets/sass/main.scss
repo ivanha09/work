@@ -46,8 +46,11 @@
 	@import 'components/section';
 	@import 'components/split';
 	@import 'components/spotlights';
+	@import 'components/hero';
 	@import 'components/table';
 	@import 'components/wrapper';
+	@import 'components/arrowdown';
+	@import 'components/iframe';
 
 // Layout.
 
@@ -55,4 +58,5 @@
 	@import 'layout/wrapper';
 	@import 'layout/footer';
 	@import 'layout/sidebar';
+	@import 'layout/topbar';
 	@import 'layout/intro';

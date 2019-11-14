@@ -7,14 +7,19 @@
 /* Wrapper */
 
 	.wrapper {
-		position: relative;
+
+		width:100%;
 
 		> .inner {
 			@include padding(5em, 5em);
-			max-width: 100%;
-			width: _size(inner-width);
+			width: 100%;
+			// width: _size(inner-width);
+			display: table;
+			margin: 0 auto;
+			// border: 1px solid red;
 
 			@include breakpoint('<=xlarge') {
+				width: 100%;
 				@include padding(4em, 4em);
 			}
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
+import { Link } from 'gatsby';
 
-export class Sidebar extends Component {
+export class Topbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       tabs: [
-        { content: 'Welcome', href: 'intro' },
         { content: 'About me', href: 'one' },
         { content: 'Work', href: 'two' },
         { content: 'Skills', href: 'three' },
@@ -19,30 +19,36 @@ export class Sidebar extends Component {
   render() {
     const { tabs } = this.state;
     return (
-      <section id="sidebar">
+      <section id="topbar">
+
         <div className="inner">
+          <Link className="title" to="/">
+            Ivan Ha
+          </Link>
+
           <nav>
             <Scrollspy
               items={tabs.map(s => s.href)}
               currentClassName="active"
-              offset={-300}
+              offset={0}
             >
               {tabs.map((tab, i) => {
                 const { href, content } = tab;
                 return (
                   <li key={href}>
-                    <Scroll type="id" element={href}>
+                    < Link to={`/#${href}`}>{content}</Link>
+                    {/* <Scroll type="id" element={href}>
                       <a href={`#${href}`}>{content}</a>
-                    </Scroll>
+                    </Scroll> */}
                   </li>
                 );
               })}
             </Scrollspy>
           </nav>
         </div>
-      </section>
+      </section >
     );
   }
 }
 
-export default Sidebar;
+export default Topbar;

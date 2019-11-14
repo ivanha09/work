@@ -33,17 +33,39 @@
 
 // Palette.
 	$palette: (
-		bg:					#312450,
-		bg-alt:				darken(#312450, 5),
-		fg:					rgba(255,255,255,0.55),
-		fg-bold:			#ffffff,
-		fg-light:			rgba(255,255,255,0.35),
-		border:				rgba(255,255,255,0.15),
-		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#5e42a6,
-		accent1-alt:		darken(#5e42a6, 10),
-		accent2:			#5052b5,
-		accent2-alt:		darken(#5052b5, 10),
-		accent3:			#b74e91,
-		accent3-alt:		darken(#b74e91, 10)
+		bg:					#b2dfdb,
+		bg-alt:				darken(#b2dfdb, 5),
+		//fg:					rgba(255,255,255,0.80),
+		// fg paragraph text
+		fg:					rgba(#505050, .80),
+		// fg-bold: Titles, icons borders.
+		fg-bold:			#505050,
+		// fg-light: nav background
+		fg-light:			rgba(255,255,255,0.75),
+		fg-green:			#07635b,
+		bg-botton:			rgb(118, 230, 213),
+		border:				#b2dfdb,
+		border-bg:			rgba(255,255,255,0.70),
+		// fg-light:			darken(#b2dfdb,0.50),
+		// border:				darken(#b2dfdb,0.35),
+		// border-bg:			darken(#b2dfdb,0.15),
+		accent1:			#ffffff,
+		accent1-alt:		darken(#000000, 10),
+		accent2:			#a4d0cc,
+		accent2-alt:		darken(#97cec9, 10),
+		accent3:			#f9f9f9,
+		accent3-alt:		darken(#b2dfdb, 10)
+		// bg:					rgb(255, 255, 255),
+		// bg-alt:				darken(#231F20, 5),
+		// fg:					rgb(196, 196, 196),
+		// fg-bold:			#ffffff,
+		// fg-light:			rgb(138, 138, 138),
+		// border:				rgba(255,255,255,0.15),
+		// border-bg:			rgba(255,255,255,0.05),
+		// accent1:			#8E793E,
+		// accent1-alt:		darken(#8E793E, 10),
+		// accent2:			#AD974F,
+		// accent2-alt:		darken(#AD974F, 10),
+		// accent3:			rgb(62, 98, 142),
+		// accent3-alt:		darken(rgb(62, 98, 142), 10)
 	);

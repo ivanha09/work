@@ -1,0 +1,82 @@
+///
+/// Hyperspace by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+	/* hero */
+
+	.hero {
+
+		> section {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'row');
+			min-height: 22.5em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// border: solid 5px blue;
+
+
+			body.is-ie & {
+				min-height: 0;
+			}
+
+			> .hero-img {
+				@include padding(1em, 1em);
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				@include vendor('justify-content', 'center');
+				-ms-flex: 1;
+				// border: solid 1px red;
+
+				> .inner {
+					@include vendor('transform', 'translateX(0) translateY(0)');
+					@include vendor('transition', (
+						'opacity #{_duration(activation)} ease',
+						'transform #{_duration(activation)} ease'
+					));
+					opacity: 1;
+				}
+			}
+
+			> .hero-content {
+				@include padding(1em, 1em);
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				@include vendor('justify-content', 'center');
+				-ms-flex: 1;
+
+
+				> .inner {
+					@include vendor('transform', 'translateX(0) translateY(0)');
+					@include vendor('transition', (
+						'opacity #{_duration(activation)} ease',
+						'transform #{_duration(activation)} ease'
+					));
+					opacity: 1;
+				}
+			}
+
+			&.inactive,
+			body.is-preload & {
+				> .image {
+					&:before {
+						opacity: 1;
+					}
+				}
+
+				> .content {
+					> .inner {
+						@include vendor('transform', 'translateX(-1em)');
+						opacity: 0;
+					}
+				}
+			}
+
+			@include breakpoint('<=small') {
+				// border: solid 6px brown;
+			}
+		}
+	}
+
