@@ -37,12 +37,14 @@ const SecondPage = () => (
             </div>
           </div>
         </section>
-        <div class="arrow-down">
-        </div>
+        <a href="#overview">
+          <div class="arrow-down">
+          </div>
+        </a>
       </section>
       <section id="main" className="wrapper">
         <div className="inner">
-          <section id="wan" className="wrapper style1 fade-up">
+          <section id="overview" className="wrapper style1 fade-up">
             <div className="inner">
               <div className="split style1">
                 <section>
