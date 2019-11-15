@@ -40,7 +40,7 @@ const IndexPage = () => (
               </p>
               <ul className="actions">
                 <li>
-                  <Scroll type="id" element="one">
+                  <Scroll type="id" element="about">
                     <a href="#one" className="button">
                       Learn more
                   </a>
@@ -61,7 +61,7 @@ const IndexPage = () => (
               <span className="icon major"><FontAwesomeIcon icon={faCoffee} /></span>
               <h3>Story</h3>
               <p>
-                I started out as a graphic designer in Toronto working for a few industries before deciding to travel and teach English in Japan. There I used the same creative problem solving skills to help students. I then moved to Tokyo and got back into development while learning some web development along the way.
+                I started out as a graphic designer in Toronto working for a few industries before deciding to travel and teach English in Japan. There I used the same creative problem solving skills to help students. I then moved to Tokyo and got back into design while learning some web development along the way.
               </p>
             </section>
             <section>

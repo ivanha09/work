@@ -10,10 +10,10 @@
 
 		width:100%;
 
+
 		> .inner {
 			@include padding(5em, 5em);
-			width: 100%;
-			// width: _size(inner-width);
+			width: _size(inner-width);
 			display: table;
 			margin: 0 auto;
 			// border: 1px solid red;

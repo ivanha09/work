@@ -77,7 +77,7 @@ const SecondPage = () => (
                 <li>Create a unified look for Sider products</li>
                 <li>Create awareness through education of products</li>
               </ul>
-              <ul class="actions">
+              <ul class="projects">
                 <li>
                   <a href="#whitepaper" class="button">
                     whitepaper

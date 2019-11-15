@@ -1,0 +1,14 @@
+
+
+.projects{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-left: (_size(element-margin) * -0.5);
+    flex-wrap: wrap;
+    > li {
+        > .button{
+            margin-bottom: 10px;
+        }    
+    } 
+}
