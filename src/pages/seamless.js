@@ -10,7 +10,8 @@ import persona3 from '../images/goodcheck/delaney.jpg';
 import infoarch from '../images/goodcheck/info-arch.png';
 import wireframes from '../images/goodcheck/gc-wireframes.png';
 import gccolors from "../images/goodcheck/gc-colors.png"
-import hero from '../images/goodcheck-card.png';
+import hero from '../images/seamless-5.png';
+import station from '../images/seamless/station.png'
 
 
 import Topbar from '../components/Topbar';
@@ -61,11 +62,12 @@ const SecondPage = () => (
                   <ul className="contact">
                     <li>
                       <h3>Deliverables</h3>
-                      <p>Documentation website</p>
+                      <p>Idea Document</p>
+                      <p>Prototype</p>
                     </li>
                     <li>
                       <h3>Rolls</h3>
-                      <p>design, layout, web developer</p>
+                      <p>UX research, UI Design</p>
                     </li>
                   </ul>
                 </section>
@@ -77,24 +79,16 @@ const SecondPage = () => (
 
               <h2>Design Solution</h2>
               <p>
-                A clean simple design meant to appeal to developers.
+                Proposal to create a mobile application that would use GPS and BLE to help foreigners navigate from their location to their desired location. Including directions inside train stations and airports using the BLE beacons.
             </p>
               <ul>
-                <li>Emphasis on the code.</li>
-                <li>Categorize the information.</li>
-                <li>Motivating examples.</li>
-                <li>Developers could reuse sample code for their own projects.</li>
-              </ul>
-              <ul className="actions">
-                <li>
-                  <a href="https://sider.github.io/goodcheck/" className="button">
-                    Live site
-                  </a>
-                </li>
+                <li>Option to select routes that include elevators and escalators.</li>
+                <li>Maps of train stations.</li>
+                <li>routes provide exact coordinates.</li>
               </ul>
             </div>
             <span className="image fit">
-              <img src={gcwebsite} alt="" />
+              <img src={station} alt="" />
             </span>
           </section>
           <section className="wrapper style2 fade-up">
@@ -102,29 +96,19 @@ const SecondPage = () => (
               <h2>Research Method</h2>
               <p>
                 <b>Field research: </b>
-                Searching repositories for the use of goodcheck.yml.
+                Our group started by researching the APIs that must be used in the contest. Which related to train, bus, airplane rooutes as well as station information.
               </p>
               <p>
-                <b>Surveys: </b>
-                Surveys were sent out to 100 users of Sider to get a better understanding of their current use and understanding of the software as well as features they would like to see.
+                <b>Google Search </b>
+                We scooured the internet for common issues travelers would post on travel forums related to Tokyo.
               </p>
               <p>
                 <b>Pain point: </b>
-                Users don’t understand how to use Goodcheck or when to use it.
-              </p>
-              <p>
-                <b>Interviews: </b>
-                The CTO and conducted seminars and asked participants what they thought of the software.
+                Travellers would have issues getting from the airport to their destination. Travelers would also have questions about their itinerary. They also wanted to see and have more authentic cultural experiences.
               </p>
               <p>
                 <b>Competitive Analysis: </b>
-                What other competing projects are out there, and how did they gain traction? This involved looking over similar linting tools. Finding their origins and what methods they use to gain more users.
-              </p>
-              <p>
-                Projects such as ESLint gained traction by open sourcing their project and having community members contribute to the project. This also involved doing seminars at various relevant events. They also had a website and tutorial videos with examples of how to use it. After installation users could also start with a recommended list or manual create their own.
-              </p>
-              <p>
-                Breaking this down, I looked at what is possible for our situation. Although Sider ran seminars, getting outside of Tokyo wasn’t so simple. The obvious ones that could help users was a website, tutorial videos and examples.
+                We also looked through previous winners projects. What applications are out there for other major cities. What already exist in the app stores.
               </p>
             </div>
           </section>
@@ -133,7 +117,7 @@ const SecondPage = () => (
             <div className="inner">
               <h2>Synthesis </h2>
               <p>
-                After conducting the research and hearing feedback about conferences participants, it was apparent that developers thought that the software would be <strong>useful</strong>, but there was <strong>no specific use cases</strong> they could think of to apply to their own work.
+                My partner and I would do are individual research and come together to discuss possible ideas including scavenger hunts around Tokyo Station to bus stop locators. We decided that the most helpful one would me an  application that helps first time travelers from the airport to their hotel. This idea would be later changed. Some ideas where didn't work out because of the restrictions on the API requirements. We decided to pursue the idea to help first time travelers searching for their hotel.
               </p>
               <h3>Website Features</h3>
               <ul>
@@ -200,7 +184,7 @@ const SecondPage = () => (
               <h3>Design</h3>
               <p>
                 <span className="image fit">
-                  <img src={gccolors} alt="" />
+                  <img src={station} alt="" />
                 </span>
               </p>
               <ul>

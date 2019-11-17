@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Footer from '../components/Footer';
 import profile from '../images/ivan.png';
+import pic0 from '../images/seamless-5.png';
 import pic1 from '../images/goodcheck-card.png';
 import pic2 from '../images/parcel-size-calc.png';
 import pic3 from '../images/better_code_review-sider.png';
@@ -12,7 +13,8 @@ import pic5 from '../images/afexa-card.png';
 import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 
-// import Topbar from '../components/Topbar';
+
+import Topbar from '../components/Topbar';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,7 +24,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const IndexPage = () => (
   <Layout>
-    <Sidebar />
+    <Topbar />
 
     <div id="wrapper">
       <section id="intro" className="wrapper style1 fullscreen hero">
@@ -40,11 +42,9 @@ const IndexPage = () => (
               </p>
               <ul className="actions">
                 <li>
-                  <Scroll type="id" element="about">
-                    <a href="#one" className="button">
-                      Learn more
+                  <a href="#one" className="button">
+                    Learn more
                   </a>
-                  </Scroll>
                 </li>
               </ul>
             </div>
@@ -89,6 +89,32 @@ const IndexPage = () => (
         <div className="inner">
           <h2>Work</h2>
         </div>
+        {/* seamless */}
+        {/* <section>
+          <div className="container">
+            <a href="/seamless" className="image" alt="image">
+              <img src={pic0} alt="" data-position="center center" />
+            </a>
+            <div className="content">
+              <div className="inner">
+                <sup>Personal Project | UX Research | UI Design</sup>
+                <h2>Seamless Tokyo</h2>
+                <p>
+                  A customizable linting tool competing for the attention of developers in the crowded space of software developement tools.
+              </p>
+
+                <ul className="actions">
+                  <li>
+                    <Link className="button" to="/seamless">
+                      Learn more
+                  </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section> */}
+        {/* goodcheck */}
         <section>
           <div className="container">
             <a href="/goodcheck" className="image" alt="image">

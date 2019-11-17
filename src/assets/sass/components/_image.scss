@@ -154,7 +154,8 @@
 
 	img {
 		display: block;
-		width: 30rem;
+		max-width: 50vw;
+		max-height: 50vh;
 	}
 
 	&.fit {
@@ -180,7 +181,10 @@
 	@include breakpoint('<=small') {
 		img {
 			display: block;
-			width: 10rem;
+			max-width: 70vw;
+			max-height: 300px;
+			padding-top: 2rem;
+			padding: 1rem;
 		}
 	}
 }

@@ -29,7 +29,6 @@
 				@include vendor('justify-content', 'center');
 				-ms-flex: 1;
 				// border: solid 1px red;
-
 				> .inner {
 					@include vendor('transform', 'translateX(0) translateY(0)');
 					@include vendor('transition', (
@@ -76,6 +75,18 @@
 
 			@include breakpoint('<=small') {
 				// border: solid 6px brown;
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				min-height: 22.5em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-top: 2em;
+
+				> .hero-content {
+					padding-left: 2em;
+					width: 100%
+				}
 			}
 		}
 	}

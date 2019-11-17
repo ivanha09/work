@@ -19,6 +19,10 @@
   top: 0;
   // width: _size(sidebar-width);
   z-index: _misc(z-index-base);
+  @include vendor('display', 'flex');
+  @include vendor('justify-content', 'center');
+
+  
 
   > .inner {
     @include vendor('display', 'flex');
@@ -29,7 +33,7 @@
 
     min-height: 100%;
     opacity: 1;
-    width: 100%;
+    width: _size(inner-width);
 
     body.is-ie & {
       height: 100%;
@@ -37,37 +41,40 @@
 
     > .title {
       border: 0;
-      // border: 1px solid red;
-      padding-right: 32em;
+      margin-left: 3em;
       color: _palette(fg-bold);
       display: block;
       font-size: 1.25em;
       font-weight: _font(weight-bold);
+      width: 100%;
+      padding: 0;
+      text-align: left;
     }
+    @include breakpoint('<=xlarge') {
+      > .title {
+      }
+		}
+
     @include breakpoint('<=large') {
       > .title {
-        border: 1px solid blue;
-        padding-right: 20em;
       }
 		}
     @include breakpoint('<=medium') {
       > .title {
-        border: 1px solid red;
-        padding-right: 10em;
       }
     }
     @include breakpoint('<=small') {
       > .title {
-        border: 1px solid green;
-        padding-right: 1.5em;
+        margin-left: 1.5em;
       }
     }
   }
 
   nav {
+    margin-right: 1.5em;
     > ul {
       list-style: none;
-      padding: 0;
+      padding: 0 1em;
 
       > li {
         @include vendor('transform', 'translateY(0)');
