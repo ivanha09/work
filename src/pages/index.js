@@ -43,7 +43,7 @@ const IndexPage = () => (
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#one" className="button">
+                  <a href="" className="button">
                     Learn more
                   </a>
                 </li>
@@ -51,6 +51,10 @@ const IndexPage = () => (
             </div>
           </div>
         </section>
+        <a href="#">
+          <div class="arrow-down">
+          </div>
+        </a>
       </section>
 
       <section id="one" className="wrapper style3 fade-up">
@@ -62,27 +66,24 @@ const IndexPage = () => (
               <span className="icon major"><FontAwesomeIcon icon={faCoffee} /></span>
               <h3>Story</h3>
               <p>
-                I started out as a graphic designer in Toronto working for a few industries before deciding to travel and teach English in Japan. There I used the same creative problem solving skills to help students. I then moved to Tokyo and got back into design while learning some web development along the way.
+                I've worked as a graphic designer in a few different industries before deciding to travel and teach English in Japan. There I used the same creative problem solving skills to help students. After that moved to Tokyo and got back into design while learning some web development along the way.
               </p>
             </section>
             <section>
               <span className="icon major"><FontAwesomeIcon icon={faLightbulb} /></span>
               <h3>How I think</h3>
               <p>
-                Everywhere I go, I always bring my perspective as a designer and love collaborating with others to learn and create better things. Design thinking comes up time and time again, be it in teaching, analytics, marketing or development. It’s all about interacting with people and how we can reach a specific goal.
+                Everywhere I go, I always bring my perspective as a designer and love collaborating with others to learn and create better things. Design thinking comes up time and time again, be it in teaching, marketing or development. It’s all about interacting with people and how we can reach a specific goal.
               </p>
             </section>
             <section>
               <span className="icon major"><FontAwesomeIcon icon={faGlobeAmericas} /></span>
               <h3>Interest</h3>
               <p>
-                I enjoy the outdoors and photography, but after working closely with developers, I now spend my down time learning programming because I want to bring my ideas to life!
+                I enjoy the outdoors and photography, but after working closely with developers, I've recently spent my down time learning programming because I want to bring my ideas to life!
               </p>
             </section>
           </div>
-        </div>
-
-        <div class="arrow-down">
         </div>
       </section>
 
@@ -223,7 +224,7 @@ const IndexPage = () => (
                 <sup>Product Illustration | Design</sup>
                 <h2>Wabi Sabi</h2>
                 <p>
-                  Global-field needed custom graphics to seperate their branded TWS Earphones from similar online sellers.
+                  Wabi Sabi needed custom graphics to seperate their branded TWS Earphones from similar online sellers.
               </p>
                 <ul className="actions">
                   <li>
@@ -305,7 +306,7 @@ const IndexPage = () => (
               <span className="icon major"><FontAwesomeIcon icon={faChalkboardTeacher} /></span>
               <h3>Instructional Design</h3>
               <p>
-                From classroom lesson plans to start up video tutorials. I'll do what needs to be done with various mediums, to get the target audience on track.
+                From classroom lesson plans to video tutorials. I work in a variety of mediums to educate the target audience.
               </p>
             </section>
           </div>
@@ -316,7 +317,7 @@ const IndexPage = () => (
         <div className="inner">
           <h2>Get in touch</h2>
           <p>
-            Want to work together or have some questions. Send me a message and I'll reply ASAP!
+            Want to work together or have some questions. Send me message!
           </p>
           <div className="split style1">
             <section>

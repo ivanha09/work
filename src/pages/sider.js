@@ -47,7 +47,7 @@ const SecondPage = () => (
                     <div className="field">
                       <h2>Overview</h2>
                       <p>
-                        Sider is company that makes developer tools. Although they are known by developer community in Tokyo they don't have much reach outside of Japan and required marketing material an English speaking audience.
+                        Sider is a Japanese company that makes developer tools. Although they are known in the development community in Tokyo they don't have much reach outside of Japan and required marketing material for an English speaking audience.
                       </p>
                     </div>
                   </div>
@@ -73,11 +73,12 @@ const SecondPage = () => (
 
               <h2>Design Solution</h2>
               <p>
-                Clean design meant to appeal to developers.
+                Reaching a crowd that's tech savvy and quick to call out marketing gimmicks requires solutions that cuts to the chase. I created online assets and print material that educated potential customers. While keeping everything within the exisitng style of the brand.
             </p>
               <ul>
-                <li>Create a unified look for Sider products</li>
-                <li>Create awareness through education of products</li>
+                <li>Create a unified look for Sider products.</li>
+                <li>Create awareness through education of products.</li>
+                <li>Design and messaging that appeals to a tech savy audience.</li>
               </ul>
               <ul class="projects">
                 <li>
@@ -117,7 +118,7 @@ const SecondPage = () => (
                     <div className="field">
                       <h2>Overview</h2>
                       <p>
-                        Sider created a white paper to educate potential corporate clients about the various methods of code review.
+                        Sider wanted to create a white paper to educate potential corporate clients about the various methods of code review.
                       </p>
                     </div>
                   </div>
@@ -126,7 +127,7 @@ const SecondPage = () => (
                   <ul className="contact">
                     <li><h3>Deliverables</h3></li>
                     <li>
-                      Whitepaper PDF format
+                      Document in PDF format
                     </li>
 
                     <li>
@@ -144,8 +145,9 @@ const SecondPage = () => (
                 <img src={whitepaper} alt="" />
               </span>
               <h2>Design Solution</h2>
+              <p>The document was targeted towards high level executives that might not be familiar with why their development department need to spend money on code review tools. I decided to simplify this complex topic by creating diagrams of the different code review styles.</p>
               <ul>
-                <li>Clean design that is easily viewable online and printed out.</li>
+                <li>A clean design that is easily viewable online and printed out.</li>
                 <li>Create diagrams which help explain each method of code review.</li>
               </ul>
             </div>
@@ -161,7 +163,7 @@ const SecondPage = () => (
                     <div className="field">
                       <h2>Overview</h2>
                       <p>
-                        Sider received interest about it's custom tools from conference attendees. So they wanted to promote the product further.
+                        Sider received feedback from conference attendees showing interest in their custom review tools and wanted to promote their products further.
                       </p>
                     </div>
                   </div>
@@ -189,10 +191,10 @@ const SecondPage = () => (
                 <img src={logos} alt="" />
               </span>
               <h2>Design Solution</h2>
-              <p>Create a modular system to make it more recognizable.</p>
+              <p>We decided to Cceate a modular system to make the products more easily recognizable. When featuring the products using logos the products have more of an identity. The colors for each logo related to the language the product focused on. The style of creating the logos with tiles was to represent the tool as one used to parse data.</p>
               <ul>
                 <li>Create a unified style for Sider products</li>
-                <li>Have a visual look that could be used for promooting on social media.</li>
+                <li>The colors of each product matches the programming language's brand colors.</li>
               </ul>
             </div>
           </section>
@@ -207,7 +209,7 @@ const SecondPage = () => (
                     <div className="field">
                       <h2>Overview</h2>
                       <p>
-                        Sider created a white paper to educate potential corporate clients about the various methods of code review.
+                        Sider wanted to create a flyer to give during conferences and meetup events.
                       </p>
                     </div>
                   </div>
@@ -221,7 +223,7 @@ const SecondPage = () => (
 
                     <li>
                       <h3>Rolls</h3>
-                      <p>design, layout, production</p>
+                      <p>production</p>
                     </li>
                   </ul>
                 </section>
@@ -234,10 +236,11 @@ const SecondPage = () => (
                 <img src={a4} alt="" />
               </span>
               <h2>Design Solution</h2>
+              <p>The rough draft of the flyer was already set before I got on board. I was charged with the production of the flyer. I used images and styles from the website and made it fit in a A4 layout.</p>
               <ul>
-                <li>Create a design that is consistent with the Sider brand.</li>
+                <li>Fit information from website into A4 size flyer.</li>
                 <li>Breakdown the information into clear sections.</li>
-                <li>Include an example of a custom rule for developers to more more easily understand Sider's benefits.</li>
+                <li>Create additional assets icons and code samples as needed.</li>
               </ul>
             </div>
           </section>
@@ -252,7 +255,7 @@ const SecondPage = () => (
                     <div className="field">
                       <h2>Overview</h2>
                       <p>
-                        Sider created a white paper to educate potential corporate clients about the various methods of code review.
+                        Sider's products are unique, but its benefits are not so apparent and needed ways to show its audience these benefits.
                       </p>
                     </div>
                   </div>
@@ -279,6 +282,7 @@ const SecondPage = () => (
                 <iframe className="iframe" src="https://www.youtube.com/embed/jU4xQ1R0MIU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <h2>Design Solution</h2>
+              <p>Create explainer videos to help explain the benefits of sider and how to use it.</p>
               <ul>
                 <li>Explain the benefits of sider as projects grow bigger.</li>
                 <li>Include examples of a team using Sider for code review.</li>

@@ -11,11 +11,11 @@
 		> section {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
-			min-height: 22.5em;
+			min-height: 32.5em;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			// border: solid 5px blue;
+			height: 100vh;
 
 
 			body.is-ie & {
@@ -77,11 +77,15 @@
 				// border: solid 6px brown;
 				@include vendor('display', 'flex');
 				@include vendor('flex-direction', 'column');
-				min-height: 22.5em;
+				min-height: 32.5em;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				padding-top: 2em;
+
+				> .hero-img {
+					min-height: 50vh;
+				}
 
 				> .hero-content {
 					padding-left: 2em;

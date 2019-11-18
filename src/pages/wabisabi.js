@@ -39,7 +39,7 @@ const SecondPage = () => (
           {/* wabisabi */}
           <section id="flyer" className="wrapper style1 fade-up">
             <div className="inner">
-              <h1>Amazon Product Images</h1>
+              <h1>Amazon Product Ads</h1>
               <div className="split style1">
                 <section>
                   <div className="fields">
@@ -73,10 +73,10 @@ const SecondPage = () => (
                 <img src={wabisabi} alt="" />
               </span>
               <h2>Design Solution</h2>
-              <p>I decided to recreate the product in Illustrator after recieving product shots that weren't shot with correct lighting. I used icons to present the product features to make it easier to quickly understand the products benefits. Some photo compositing was needed for examples of people using the product.</p>
+              <p>I decided to create product illustrations after receviing product shots that weren't shot with correct lighting. This gave the images a more professional quality. Knowing that amazon buyers often compare products it was important to make it visually appealling and quick to understand. The color orange was used to appeal to a more youthful active audience and to match with the color of the manual included in the box. I used icons for viewers to quickly scan the highlighted products benefits. Some photo compositing was needed to create examples of people using the product.</p>
               <ul>
-                <li>Create a design that is consistent with the Sider brand.</li>
-                <li>Include information that helps explain the benefits of Sider.</li>
+                <li>Create product illustrations.</li>
+                <li>Make the product appeal to an active audience.</li>
               </ul>
             </div>
           </section>

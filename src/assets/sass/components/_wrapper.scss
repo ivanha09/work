@@ -9,27 +9,18 @@
 	.wrapper {
 
 		width:100%;
-
+		padding-top: 3em;
 
 		> .inner {
 			@include padding(5em, 5em);
-			width: _size(inner-width);
+			width:100%;
 			display: table;
 			margin: 0 auto;
-			// border: 1px solid red;
 
 			@include breakpoint('<=xlarge') {
-				width: _size(inner-width);
+				width:100%;
 				@include padding(4em, 4em);
 			}
-
-			@include breakpoint('<=large') {
-				width:100%;
-			}
-
-			// @include breakpoint('<=medium') {
-			// 	width: _size(inner-width);
-			// }
 
 			@include breakpoint('<=small') {
 				@include padding(3em, 2em);
