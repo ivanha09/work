@@ -19,13 +19,17 @@
 			// border: 1px solid red;
 
 			@include breakpoint('<=xlarge') {
-				width: 100%;
+				width: _size(inner-width);
 				@include padding(4em, 4em);
 			}
 
 			@include breakpoint('<=large') {
-				width: 100%;
+				width:100%;
 			}
+
+			// @include breakpoint('<=medium') {
+			// 	width: _size(inner-width);
+			// }
 
 			@include breakpoint('<=small') {
 				@include padding(3em, 2em);

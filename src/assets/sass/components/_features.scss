@@ -132,7 +132,7 @@
 			display: block;
 
 			section {
-				@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+				// @include padding(3em, 3em, (0.5em, 0, 0, 4em));
 				// border-top-width: 1px !important;
 				border-left-width: 0 !important;
 				width: 100%;
@@ -146,21 +146,22 @@
 
 		@include breakpoint('<=small') {
 			section {
-				@include padding(2em, 1.5em, (0.5em, 0, 0, 4em));
+
+				// @include padding(2em, 1.5em, (0.5em, 0, 0, 4em));
 			}
 		}
 
-		@include breakpoint('<=xsmall') {
-			section {
-				@include padding(2em, 1.5em, (0, 0, 0, 0));
+		// @include breakpoint('<=xsmall') {
+		// 	section {
+		// 		@include padding(2em, 1.5em, (0, 0, 0, 0));
 
-				.img {
-					left: 0;
-					position: relative;
-					top: 0;
-				}
-			}
-		}
+		// 		.img {
+		// 			left: 0;
+		// 			position: relative;
+		// 			top: 0;
+		// 		}
+		// 	}
+		// }
 	}
 
 	// .features {

@@ -47,7 +47,7 @@ const SecondPage = () => (
                     <div className="field">
                       <h2>Overview</h2>
                       <p>
-                        Sider is company that makes developer tools. Although they have known by developer community in Japan they don't have much reach outside and required marketing material for their online presense and for their booth at GitHub Universe.
+                        Sider is company that makes developer tools. Although they are known by developer community in Tokyo they don't have much reach outside of Japan and required marketing material an English speaking audience.
                       </p>
                     </div>
                   </div>

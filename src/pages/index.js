@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Footer from '../components/Footer';
 import profile from '../images/ivan.png';
 import pic0 from '../images/seamless-5.png';
+import imi from '../images/imi-map.png';
 import pic1 from '../images/goodcheck-card.png';
 import pic2 from '../images/parcel-size-calc.png';
 import pic3 from '../images/better_code_review-sider.png';
@@ -114,6 +115,33 @@ const IndexPage = () => (
             </div>
           </div>
         </section> */}
+
+        {/* imi map */}
+        {/* <section>
+          <div className="container">
+            <a href="/imimap" className="image" alt="image">
+              <img src={imi} alt="" data-position="center center" />
+            </a>
+            <div className="content">
+              <div className="inner">
+                <sup>UX Research | UI Design</sup>
+                <h2>Questionarie Japan Map</h2>
+                <p>
+                  IMI Japan wanted an easier way for survey participants to select where they live.
+              </p>
+
+                <ul className="actions">
+                  <li>
+                    <Link className="button" to="/imimap">
+                      Learn more
+                  </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
         {/* goodcheck */}
         <section>
           <div className="container">
