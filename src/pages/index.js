@@ -43,7 +43,7 @@ const IndexPage = () => (
               </p>
               <ul className="actions">
                 <li>
-                  <a href="" className="button">
+                  <a href="#one" className="button">
                     Learn more
                   </a>
                 </li>
@@ -51,7 +51,7 @@ const IndexPage = () => (
             </div>
           </div>
         </section>
-        <a href="#">
+        <a href="#one">
           <div class="arrow-down">
           </div>
         </a>

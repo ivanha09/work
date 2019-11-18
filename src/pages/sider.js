@@ -282,9 +282,9 @@ const SecondPage = () => (
                 <iframe className="iframe" src="https://www.youtube.com/embed/jU4xQ1R0MIU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <h2>Design Solution</h2>
-              <p>Create explainer videos to help explain the benefits of sider and how to use it.</p>
+              <p>Create explainer videos to point out the benefits of Sider and how to use it.</p>
               <ul>
-                <li>Explain the benefits of sider as projects grow bigger.</li>
+                <li>Explain the the unique benefits of Sider.</li>
                 <li>Include examples of a team using Sider for code review.</li>
                 <li>Breakdown and explain custom rules.</li>
               </ul>
