@@ -8,11 +8,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Hyperspace',
-        short_name: 'starter',
+        name: 'portfolio',
+        short_name: 'portfolio',
         start_url: '/',
 
-        display: 'standalone',
+        display: 'portfolio',
         icon: 'src/assets/img/favicon.png', // This path is relative to the root of the site.
       },
     },

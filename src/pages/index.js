@@ -108,30 +108,32 @@ const IndexPage = () => (
             <h2>Work</h2>
           </div>
           {/* seamless */}
-          {/* <section>
-          <div className="container">
-            <a href="/seamless" className="image" alt="image">
-              <img src={pic0} alt="" data-position="center center" />
-            </a>
-            <div className="content">
-              <div className="inner">
-                <sup>Personal Project | UX Research | UI Design</sup>
-                <h2>Seamless Tokyo</h2>
-                <p>
-                  A customizable linting tool competing for the attention of developers in the crowded space of software developement tools.
+          <section>
+            <Slide bottom cascade>
+              <div className="container">
+                <a href="/seamless" className="image" alt="image">
+                  <img src={pic0} alt="" data-position="center center" />
+                </a>
+                <div className="content">
+                  <div className="inner">
+                    <sup>Personal Project | UX Research | UI Design</sup>
+                    <h2>Seamless Tokyo</h2>
+                    <p>
+                      Proposed Mobile Application Idea for the 3rd Open Data Challenge for Public Transportation in Tokyo.
               </p>
 
-                <ul className="actions">
-                  <li>
-                    <Link className="button" to="/seamless">
-                      Learn more
+                    <ul className="actions">
+                      <li>
+                        <Link className="button" to="/seamless">
+                          Learn more
                   </Link>
-                  </li>
-                </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section> */}
+            </Slide>
+          </section>
 
           {/* imi map */}
           {/* <section>

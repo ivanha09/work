@@ -5,7 +5,6 @@ import Layout from '../components/layout';
 import Footer from '../components/Footer';
 import hero from '../images/wabi-sabi.png';
 import wabisabi from '../images/wabisabi/wabisabi.png';
-import logos from '../images/sider/sider-logos.png';
 
 import Topbar from '../components/Topbar';
 
