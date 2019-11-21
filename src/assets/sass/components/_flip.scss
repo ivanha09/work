@@ -1,0 +1,17 @@
+.flip {
+    padding: 0 3em 7em 3em;
+    font-size: 140%;
+
+    > .prev {
+        float: left;
+    }
+    > .next {
+        float: right;
+    }
+
+    @include breakpoint('<=small'){
+        padding: 2em;
+        height: 8em;
+        font-size: 110%;
+    }
+}

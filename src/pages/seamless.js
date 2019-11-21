@@ -12,6 +12,9 @@ import hero from '../images/seamless-5.png';
 import station from '../images/seamless/station.png';
 import screenshot from '../images/seamless/seamless-screenshots.png';
 
+import Next from '../components/Next';
+
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Topbar from '../components/Topbar';
 
@@ -21,88 +24,89 @@ const SecondPage = () => (
   <Layout>
     <Topbar />
 
-    <div id="wrapper">
-      <section id="pintro" className="wrapper style1 fullscreen hero">
-        <section>
-          <Fade bottom cascade>
+    <PageTransition>
+      <div id="wrapper">
+        <section id="pintro" className="wrapper style1 fullscreen hero">
+          <section>
+            <Fade bottom cascade>
 
-            <div className="hero-img">
-              <a href="/#" className="project" alt="image">
-                <img src={hero} alt="" data-position="center center" />
-              </a>
-            </div>
-            <div className="hero-content">
-              <div className="inner">
-                <sup>Personal Project | UX Research | UI Design</sup>
-                <h1>Seamless Tokyo</h1>
-                <p>
-                  A seamless navigation application for foreign tourist in Tokyo.
+              <div className="hero-img">
+                <a href="/#" className="project" alt="image">
+                  <img src={hero} alt="" data-position="center center" />
+                </a>
+              </div>
+              <div className="hero-content">
+                <div className="inner">
+                  <sup>Personal Project | UX Research | UI Design</sup>
+                  <h1>Seamless Tokyo</h1>
+                  <p>
+                    A seamless navigation application for foreign tourist in Tokyo.
               </p>
+                </div>
               </div>
+            </Fade>
+          </section>
+          <a href="#overview">
+            <div class="arrow-down">
             </div>
-          </Fade>
+          </a>
         </section>
-        <a href="#overview">
-          <div class="arrow-down">
-          </div>
-        </a>
-      </section>
-      <section id="main" className="wrapper">
-        <div className="inner">
-          <section id="overview" className="wrapper style1 fade-up">
-            <div className="inner">
-              <div className="split style1">
-                <section>
-                  <div className="fields">
-                    <div className="field">
-                      <h2>Project Overview</h2>
-                      <p>
-                        The Association for Open Data of Public Transportation is promoting the openness of public transportation data with an aim to make public transportation in Tokyo easier for all people, including foreign visitors, people with disabilities, and elderly to navigate.
+        <section id="main" className="wrapper">
+          <div className="inner">
+            <section id="overview" className="wrapper style1 fade-up">
+              <div className="inner">
+                <div className="split style1">
+                  <section>
+                    <div className="fields">
+                      <div className="field">
+                        <h2>Project Overview</h2>
+                        <p>
+                          The Association for Open Data of Public Transportation is promoting the openness of public transportation data with an aim to make public transportation in Tokyo easier for all people, including foreign visitors, people with disabilities, and elderly to navigate.
                       </p>
+                      </div>
                     </div>
-                  </div>
-                </section>
-                <section>
-                  <ul className="contact">
-                    <li>
-                      <h3>Deliverables</h3>
-                      <p>Idea Document, protoype</p>
-                    </li>
-                    <li>
-                      <h3>Rolls</h3>
-                      <p>UX research, UI Design</p>
-                    </li>
-                  </ul>
-                </section>
+                  </section>
+                  <section>
+                    <ul className="contact">
+                      <li>
+                        <h3>Deliverables</h3>
+                        <p>Idea Document, protoype</p>
+                      </li>
+                      <li>
+                        <h3>Rolls</h3>
+                        <p>UX research, UI Design</p>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
               </div>
-            </div>
-          </section>
-          <section className="wrapper style3 fade-up">
-            <div className="inner">
+            </section>
+            <section className="wrapper style3 fade-up">
+              <div className="inner">
 
-              <h2>Design Solution</h2>
-              <p>
-                A proposal to create a mobile application that would use GPS and BLE to help foreigners navigate from their location to their desired location. Current mapping software only replies on GPS information so would only show a direct line from trains to the exit. With BLE beacon and station map information the navigation software would include directions inside train stations and airports with ability to select the use of escalators and elevators.
+                <h2>Design Solution</h2>
+                <p>
+                  A proposal to create a mobile application that would use GPS and BLE to help foreigners navigate from their location to their desired location. Current mapping software only replies on GPS information so would only show a direct line from trains to the exit. With BLE beacon and station map information the navigation software would include directions inside train stations and airports with ability to select the use of escalators and elevators.
             </p>
-              <ul>
-                <li>Option to select routes that include elevators and escalators.</li>
-                <li>Maps of train stations.</li>
-                <li>Routes provide exact coordinates.</li>
-              </ul>
-              <ul className="actions">
-                <li>
-                  <a href="https://docs.google.com/document/d/15prBKfeYDv47ejMQ_SEsTr7oT2aEg-EM1QZ9N_5rM8o/edit" className="button">
-                    Idea Document
+                <ul>
+                  <li>Option to select routes that include elevators and escalators.</li>
+                  <li>Maps of train stations.</li>
+                  <li>Routes provide exact coordinates.</li>
+                </ul>
+                <ul className="actions">
+                  <li>
+                    <a href="https://docs.google.com/document/d/15prBKfeYDv47ejMQ_SEsTr7oT2aEg-EM1QZ9N_5rM8o/edit" className="button">
+                      Idea Document
                   </a>
-                </li>
-              </ul>
-            </div>
-            <span className="image fit">
-              <img src={screenshot} alt="" />
-            </span>
-          </section>
+                  </li>
+                </ul>
+              </div>
+              <span className="image fit">
+                <img src={screenshot} alt="" />
+              </span>
+            </section>
 
-          {/* <section className="wrapper style2 fade-up">
+            {/* <section className="wrapper style2 fade-up">
             <div className="inner">
               <h2>Research Method</h2>
               <p>
@@ -229,7 +233,7 @@ const SecondPage = () => (
             </div>
           </section> */}
 
-          {/* <section className="wrapper style1 fade-up">
+            {/* <section className="wrapper style1 fade-up">
             <div className="inner">
               <h2>Next Steps</h2>
               <ul>
@@ -238,10 +242,15 @@ const SecondPage = () => (
               </ul>
             </div>
           </section> */}
-        </div>
-      </section>
-    </div>
+          </div>
 
+        </section>
+
+      </div>
+      <div className="flip">
+        <Next link={"/goodcheck"} />
+      </div>
+    </PageTransition>
     <Footer />
   </Layout >
 );

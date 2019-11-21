@@ -11,6 +11,8 @@ import infoarch from '../images/goodcheck/info-arch.png';
 import wireframes from '../images/goodcheck/gc-wireframes.png';
 import gccolors from "../images/goodcheck/gc-colors.png"
 import hero from '../images/goodcheck-card.png';
+import Prev from '../components/Prev';
+import Next from '../components/Next';
 
 
 import Topbar from '../components/Topbar';
@@ -239,6 +241,10 @@ const SecondPage = () => (
             </section>
           </div>
         </section>
+      </div>
+      <div className="flip">
+        <Prev link={"/seamless"} />
+        <Next link={"/sider"} />
       </div>
     </PageTransition>
 

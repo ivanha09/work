@@ -7,6 +7,8 @@ import hero from '../images/better_code_review-sider.png';
 import a4 from '../images/sider/sider-A4.png';
 import whitepaper from '../images/sider/sider-whitepaper.png';
 import logos from '../images/sider/sider-logos.png';
+import Prev from '../components/Prev';
+import Next from '../components/Next';
 
 import Topbar from '../components/Topbar';
 
@@ -294,6 +296,10 @@ const SecondPage = () => (
             </section>
           </div>
         </section>
+      </div>
+      <div className="flip">
+        <Prev link={"/goodcheck"} />
+        <Next link={"/wabisabi"} />
       </div>
     </PageTransition>
 

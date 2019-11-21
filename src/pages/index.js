@@ -53,7 +53,7 @@ const IndexPage = () => (
                     <li>
                       <a href="#one" className="button">
                         Learn more
-                  </a>
+                      </a>
                     </li>
                   </ul>
                 </div>
