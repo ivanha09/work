@@ -10,7 +10,7 @@
     }
 
     @include breakpoint('<=small'){
-        padding: 2em;
+        padding: 0 1.5em 1em 1.5em;
         height: 8em;
         font-size: 110%;
     }

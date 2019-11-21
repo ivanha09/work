@@ -19,8 +19,6 @@ import Topbar from '../components/Topbar';
 
 import PageTransition from 'gatsby-plugin-page-transitions';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
-
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -37,7 +35,7 @@ const IndexPage = () => (
       <div id="wrapper">
         <section id="intro" className="wrapper style1 fullscreen hero">
           <section>
-            <Fade bottom cascade>
+            <Fade cascade>
               <div className="hero-img">
                 <a href="/#" className="profile" alt="image">
                   <img src={profile} alt="" data-position="center center" />
@@ -70,7 +68,7 @@ const IndexPage = () => (
           <div className="inner">
 
             <h2>About me</h2>
-            <Fade bottom cascade>
+            <Fade cascade>
 
               <div className="abouts">
 
@@ -109,7 +107,7 @@ const IndexPage = () => (
           </div>
           {/* seamless */}
           <section>
-            <Slide bottom cascade>
+            <Fade cascade>
               <div className="container">
                 <a href="/seamless" className="image" alt="image">
                   <img src={pic0} alt="" data-position="center center" />
@@ -132,7 +130,7 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </section>
 
           {/* imi map */}
@@ -163,7 +161,7 @@ const IndexPage = () => (
 
           {/* goodcheck */}
           <section>
-            <Slide bottom cascade>
+            <Fade cascade>
               <div className="container">
                 <a href="/goodcheck" className="image" alt="image">
                   <img src={pic1} alt="" data-position="center center" />
@@ -186,10 +184,10 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </section>
           <section>
-            <Slide bottom cascade>
+            <Fade cascade>
               <div className="container">
                 <a href="https://0qhz9.csb.app/" className="image" alt="image">
                   <img src={pic2} alt="" data-position="center center" />
@@ -211,10 +209,10 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </section>
           <section>
-            <Slide bottom cascade>
+            <Fade cascade>
               <div className="container">
                 <a href="/sider" className="image">
                   <img src={pic3} alt="" data-position="top center" />
@@ -236,10 +234,10 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </section>
           <section>
-            <Slide bottom cascade>
+            <Fade cascade>
               <div className="container">
                 <a href="/wabisabi" className="image">
                   <img src={pic4} alt="" data-position="25% 25%" />
@@ -261,7 +259,7 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </section>
           {/* <section>
           <div className="container">
@@ -312,7 +310,7 @@ const IndexPage = () => (
         <section id="three" className="wrapper style3 fade-up">
           <div className="inner">
             <h2>Skills</h2>
-            <Fade bottom cascade>
+            <Fade cascade>
 
               <div className="features">
                 <section>
@@ -341,7 +339,7 @@ const IndexPage = () => (
               </div>
             </Fade>
             <h2>Toolkit</h2>
-            <Fade bottom cascade>
+            <Fade cascade>
               <div className="toolkit">
                 <section>
                   <ul>

@@ -19,8 +19,6 @@ import Topbar from '../components/Topbar';
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
-
 
 const SecondPage = () => (
   <Layout>
@@ -30,7 +28,7 @@ const SecondPage = () => (
       <div id="wrapper">
         <section id="pintro" className="wrapper style1 fullscreen hero">
           <section>
-            <Fade bottom cascade>
+            <Fade cascade>
               <div className="hero-img">
                 <a href="/#" className="project" alt="image">
                   <img src={hero} alt="" data-position="center center" />

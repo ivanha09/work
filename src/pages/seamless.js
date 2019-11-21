@@ -28,7 +28,7 @@ const SecondPage = () => (
       <div id="wrapper">
         <section id="pintro" className="wrapper style1 fullscreen hero">
           <section>
-            <Fade bottom cascade>
+            <Fade cascade>
 
               <div className="hero-img">
                 <a href="/#" className="project" alt="image">
